@@ -1,0 +1,218 @@
+/* -----------------------------------------global----------------------------------------------------- */
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+:root a {
+  text-decoration: none;
+}
+
+:root ul {
+  list-style: none;
+}
+
+:root big {
+  font-size: 1.4rem;
+}
+
+:root button {
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #f2910a);
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #e14d2a);
+}
+
+#image-set {
+  border-radius: 50%;
+}
+
+
+/* -----------------------------------------global-ends------------------------------------------------ */
+
+.container {
+  height: 100vh;
+  width: 100%;
+}
+
+.inner-container {
+  height: 100%;
+  width: 100%;
+}
+
+/* -----------------------------------------------technologies-page----------------------------- */
+
+.team-top-image {
+  background: linear-gradient(rgba(21, 10, 80, 0.74), rgba(21, 10, 80, 0.252)),
+    url(Images/tech-top.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 2.5rem;
+  color: aliceblue;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 8%;
+  overflow-x: hidden;
+}
+
+.about-animation-wave {
+  position: absolute;
+  width: 500%;
+  height: 6vh;
+  bottom: 0;
+  opacity: 0.2;
+  left: 0;
+  display: unset;
+}
+
+.black-box button {
+  padding: 8px 20px;
+  margin: 0px 5px;
+  font-size: 1rem;
+  background-color: transparent;
+  color: aliceblue;
+  border: 2px solid aliceblue;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.black-box button:hover {
+  background-color: #f7f7f8;
+  color: #e14d2a;
+  transition: 0.4s linear;
+  font-weight: 500;
+}
+
+.team-intro-title {
+  height: 25vh;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: #383e56;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-intro-title hr {
+  margin: 18px;
+}
+
+.hero-text {
+  font-size: 1.3rem;  
+  line-height: 2;
+  text-transform: uppercase;
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #383e56;
+}
+
+.add-space {
+  margin-bottom: 3%;
+}
+/* -----------------------------------------------technologies-page-ends---------------------------- */
+
+/* ----------------------------------------Javascript-frameworks------------------------------------ */
+
+#javascript-frameworks {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.bar-container {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 5%;
+}
+
+.bar {
+  height: 35%;
+  width: 30%;
+  background-color: aliceblue;
+  display: flex;
+  box-shadow: -5px -5px 20px #d0d0d0;
+  transition: 0.5s;
+}
+
+.bar:hover {
+  background-color: #f2910a;
+  border-radius: 15px;
+}
+
+.bar:hover .framework-name {
+  color: #f7f7f8;
+}
+
+.icon {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.icon img {
+  height: 8vh;
+  width: 35%;
+} 
+
+.framework-name {
+  height: 100%;
+  width: 40%;
+  color: #383e56;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* ----------------------------------------Javascript-frameworks-ends-------------------------------- */
+
+/* -----------------------------------------technology-container--------------------------------------------- */
+
+.technology-container {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.font-size {
+  font-size: 0.8rem;
+}
+/* -----------------------------------------technology-container-done-------------------------------------------- */

@@ -1,0 +1,361 @@
+/* -------------------------------------------------------Annimation--------------------------------------------------- */
+/* -------------------------------------------------------slide-text--------------------------------------------------- */
+
+.slide-left {
+  animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(-100px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* -------------------------------------------------------focus--------------------------------------------------- */
+
+.scale-up-center {
+  animation: scale-up-center 1.2s both;
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* -------------------------------------------------------zoom-out--------------------------------------------------- */
+
+.scale-down-center {
+  animation: scale-down-center 1.2s both;
+}
+
+@keyframes scale-down-center {
+  0%,100%{
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.6);
+  }
+}
+
+/* -------------------------------------------------------bounce-in-top--------------------------------------------------- */
+
+.bounce-in-top {
+  animation: bounce 2s linear 0s 1 normal forwards;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-500px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+
+  55% {
+    transform: translateY(-65px);
+    animation-timing-function: ease-in;
+  }
+
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+
+  81% {
+    transform: translateY(-28px);
+    animation-timing-function: ease-in;
+  }
+
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+
+  95% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
+
+.sec1 {
+  animation-duration: 1s;
+}
+.sec1e2 {
+  animation-duration: 1.2s;
+}
+.sec1e5 {
+  animation-duration: 1.5s;
+}
+.sec2 {
+  animation-duration: 2s;
+}
+/* --------------------------------------------------wave opacity------------------------------------------------------- */
+.about-animation-wave {
+  animation: animate-wave-opacity 3s linear;
+}
+
+@keyframes animate-wave-opacity {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+/* --------------------------------------------------wave opacity done-------------------------------------------------- */
+
+/* --------------------------------------------------wave movement------------------------------------------------------ */
+.about-animation-wave{
+  animation: animate-wave 8s linear infinite;
+}
+
+@keyframes animate-wave {
+  0% {
+    left: -400px;
+  }
+  100% {
+    left: -6000px;
+  }
+}
+/* --------------------------------------------------wave movement ends------------------------------------------------ */
+
+
+.top-image-text {
+  animation: animate-top-image-text 1s linear; 
+}
+
+@keyframes animate-top-image-text {
+  0% {
+    transform: translateX(-10%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* -------------------------------------------------wave-animation-home-------------------------------------------------- */
+@keyframes animate-wave {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: -1900px;
+  }
+}
+/* -------------------------------------------------wave-animation-home-ends-------------------------------------------- */
+
+/*------------------------------------------------ animation--------------------------------------------------------- */
+
+@keyframes animate-text {
+  0% {
+    opacity: 0%;
+    visibility: hidden;
+    transform: translateY(-20%);
+  }
+
+  
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes animate-title {
+  0% {
+    opacity: 0%;
+    visibility: hidden;
+    transform: translateX(-20%);
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/*------------------------------------------------ animation-ends--------------------------------------------------------- */
+
+/* -----------------------------------------------animation of boxes border--------------------------- */
+
+@keyframes animate-boxes {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* -------------------------------completed----------------------- */
+
+/* --------------------------------------------------------keyframes------------------------------------------------- */
+@keyframes animate-show {
+  0% {
+    height: 7vh;
+  }
+
+  50% {
+    height: 14vh;
+    transition: 0.3s;
+  }
+
+  75% {
+    height: 21vh;
+    transition: 0.3s;
+  }
+
+  100% {
+    height: 28vh;
+    transition: 0.3s;
+  }
+}
+
+@keyframes animate-show-text {
+  0% {
+    line-height: 0.3;
+    transition: 0.3s;
+  }
+
+  50% {
+    line-height: 0.7;
+    transition: 0.3s;
+  }
+
+  75% {
+    line-height: 1.1;
+    transition: 0.3s;
+  }
+
+  100% {
+    line-height: 1.5;
+    transition: 0.3s;
+  }
+}
+
+@keyframes animate-show2 {
+  0% {
+    height: 7vh;
+  }
+
+  50% {
+    height: 14vh;
+    transition: 0.3s;
+  }
+
+  75% {
+    height: 21vh;
+    transition: 0.3s;
+  }
+
+  100% {
+    height: 28vh;
+    transition: 0.3s;
+  }
+}
+
+@keyframes animate-show-text2 {
+  0% {
+    line-height: 0.3;
+    transition: 0.3s;
+  }
+
+  50% {
+    line-height: 0.7;
+    transition: 0.3s;
+  }
+
+  75% {
+    line-height: 1.1;
+    transition: 0.3s;
+  }
+
+  100% {
+    line-height: 1.5;
+    transition: 0.3s;
+  }
+}
+
+@keyframes animate-show3 {
+  0% {
+    height: 7vh;
+  }
+
+  50% {
+    height: 14vh;
+    transition: 0.3s;
+  }
+
+  75% {
+    height: 21vh;
+    transition: 0.3s;
+  }
+
+  100% {
+    height: 28vh;
+    transition: 0.3s;
+  }
+}
+
+@keyframes animate-show-text3 {
+  0% {
+    line-height: 0.3;
+    transition: 0.3s;
+  }
+
+  50% {
+    line-height: 0.7;
+    transition: 0.3s;
+  }
+
+  75% {
+    line-height: 1.1;
+    transition: 0.3s;
+  }
+
+  100% {
+    line-height: 1.5;
+    transition: 0.3s;
+  }
+}
+/* -------------------------------------------------keyframes-completed------------------------------------------------- */
+
+@keyframes myAnim {
+  0% {
+    background-position: center;
+    background-size: 100%;
+  }
+  50% {
+    background-position: center;
+    background-size: 120%;
+  }
+
+  100% {
+    background-position: center top;
+    background-size: 105%;
+  }
+}
+

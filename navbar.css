@@ -1,0 +1,141 @@
+a {
+  text-decoration: none;
+}
+nav {
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+}
+
+.navbar-container {
+  height: 8.5vh;
+  width: 100%;
+  background-color: #f7f7f8;
+  box-shadow: 0px 5px 10px rgb(161, 161, 161);
+}
+
+.navbar-inner-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  height: 130px;
+  width: 30%;
+}
+
+.nav-links {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.nav-links a {
+  color: #e14d2a;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.wrapper {
+  height: 80%;
+  padding-top: 17px;
+  border: none;
+  background-color: transparent;
+  color: #e14d2a;
+  font-size: 1.1rem;
+  margin: 0px -40px;
+  cursor: pointer;
+}
+
+.menu-content {
+  height: 17vh;
+  width: 110%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  transform: translateY(16%);
+  background-color: #f7f7f8;
+  line-height: 2;
+  padding: 5% 25%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px #5e5e5e;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu-content a {
+  color: #383e56;
+}
+
+.wrapper:hover {
+  color: #f2910a;
+  transition: 0.3s linear;
+}
+
+.wrapper:hover .menu-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-content,
+.nav-links a:hover {
+  color: #f2910a;
+  transition: 0.3s linear;
+}
+
+.Service-content {
+  height: 26vh;
+  width: 110%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  transform: translateY(10.9%);
+  background-color: #f7f7f8;
+  line-height: 2;
+  padding: 5% 25%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px #5e5e5e;
+  opacity: 0;
+  visibility: hidden;
+}
+.Service-content a {
+  color: #383e56;
+}
+
+.wrapper:hover {
+  color: #f2910a;
+  transition: 0.3s linear;
+}
+
+.wrapper:hover .Service-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.Service-content,
+.nav-links a:hover {
+  color: #f2910a;
+  transition: 0.3s linear;
+}

@@ -1,0 +1,44 @@
+a {
+  text-decoration: none;
+}
+
+.header-container {
+  height: 8vh;
+  width: 100%;
+  background-color: #051556;
+}
+
+.header-inner-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-info a,
+i {
+  color: white;
+}
+
+.header-social-icons i:hover {
+  color: #f2910a;
+  transition: 0.5s;
+}
+
+.header-info {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.header-social-icons {
+  height: 100%;
+  width: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.3rem;
+}

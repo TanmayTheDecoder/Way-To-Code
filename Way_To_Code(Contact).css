@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+:root big {
+  color: #f2910a;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #f2910a);
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #e14d2a);
+}
+
+.hidden-info a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 1.3rem;
+}
+
+/* -----------------------------------------team-top------------------------------------------- */
+
+.team-top-image {
+  background: linear-gradient(rgba(21, 10, 80, 0.74), rgba(21, 10, 80, 0.252)),
+    url(Images/contact\ us.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 2.5rem;
+  color: aliceblue;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 8%;
+  overflow-x: hidden;
+}
+
+.about-animation-wave {
+  position: absolute;
+  width: 500%;
+  height: 6vh;
+  bottom: 0;
+  opacity: 0.2;
+  left: 0;
+  display: unset;
+}
+
+.black-box button {
+  padding: 8px 20px;
+  margin: 0px 5px;
+  font-size: 1rem;
+  background-color: transparent;
+  color: aliceblue;
+  border: 2px solid aliceblue;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.black-box button:hover {
+  background-color: #f7f7f8;
+  color: #e14d2a;
+  transition: 0.4s linear;
+  font-weight: 500;
+}
+
+.team-intro-title {
+  height: 25vh;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: #383e56;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-intro-title hr {
+  margin: 18px;
+}
+
+/* -----------------------------------------team-top-ends-------------------------------------- */
+
+/* -----------------------------------------contact-info-container----------------------------- */
+
+.contact-info-container {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-contact {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  height: 100%;
+  width: 30%;
+  color: #383e56;
+  box-shadow: 0px 0px 10px #d7d7d7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1.1;
+  position: relative;
+  overflow: hidden;
+}
+
+.info svg,
+.info h2 {
+  margin: auto;
+}
+
+.hidden-info {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  bottom: 0;
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+
+.info:hover .hidden-info {
+  opacity: 1;
+  height: 100%;
+  visibility: visible;
+  transition: 0.4s;
+  background: #737373f2;
+}
+
+/* -----------------------------------------contact-info-container-done------------------------ */
+
+#mapandform {
+  display: flex;
+  height: 64vh;
+  margin-bottom: -5%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.mapcontainer {
+  width: 40%;
+  height: 90%;
+}
+
+.form-container {
+  width: 40%;
+  height: 90%;
+  background: linear-gradient(rgba(0, 0, 50, 0.9), rgba(0, 0, 50, 0.5)),
+    url(Images/form-image.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#reviewform table thead th {
+  color: aliceblue;
+  font-size: 1.5rem;
+}
+
+#reviewform table td label {
+  color: aliceblue;
+}
+
+#reviewform table input[type="text"] {
+  background: transparent;
+  border: 1px solid aliceblue;
+}
+
+#reviewform table textarea {
+  background: transparent;
+  border: 1px solid aliceblue;
+}
+
+.width-set {
+  width: 96.3%;
+}
+
+#reviewform table input::placeholder {
+  color: #ccc;
+  text-align: center;
+  outline: none;
+}
+
+#reviewform table input {
+  color: #fff;
+  padding-left: 5%;
+}
+
+#reviewform table textarea::placeholder {
+  color: #ccc;
+  padding: 5% 5%;
+}
+
+#reviewform table textarea {
+  border-radius: 10px;
+  outline: none;
+  width: 91%;
+  color: aliceblue;
+  padding: 5%;
+}
+
+#reviewform table td input {
+  height: 4vh;
+  border-radius: 25px;
+}
+
+#reviewform table button:hover {
+  filter: drop-shadow(0px 0px 10px aliceblue);
+  transition: 0.3s;
+}
+
+#reviewform table button {
+  background: white;
+  color: #e14d2a;
+  width: 80%;
+}
+
+#reviewform table .submitbutton {
+  width: 50%;
+  height: 4vh;
+  border-radius: 50px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+#reviewform table .resetbutton {
+  width: 160%;
+  height: 4vh;
+  border-radius: 50px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}

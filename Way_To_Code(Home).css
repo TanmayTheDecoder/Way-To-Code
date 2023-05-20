@@ -1,0 +1,796 @@
+/* --------------------------------------------------------global------------------------------------------------------- */
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+:root .padding {
+  padding: 1%;
+}
+
+:root .attach-background {
+  background-attachment: fixed;
+}
+
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+:root a {
+  text-decoration: none;
+}
+
+:root ul {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #f2910a);
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, #e14d2a);
+}
+
+.heading-case {
+  text-transform: uppercase;
+  color: var(--dark-grey);
+}
+
+:root {
+  --vermillion: #e14d2a;
+  --sunset: #f2910a;
+  --pale-orange : #ffbf67;
+  --dark-grey: #383e56;
+  --light-grey: #969696;
+  --bluish-white: aliceblue;
+  --transperent-vermillion: #e14c2a91;
+  --transperent-sunset: #f2910a88;
+}
+
+:root {
+  --big-fonts: 2rem;
+  --medium-fonts: 1.5rem;
+  --average-fonts: 1.3rem;
+  --general-fonts: 1rem;
+}
+
+:root {
+  --uppers: uppercase;
+  --capitals: capitalize;
+}
+
+:root {
+  --thick: 600;
+  --medium: 500;
+  --thin: 300;
+}
+
+:root .btn-hover:hover {
+  background-color: var(--vermillion);
+  color: var(--bluish-white);
+  transition: 0.5s;
+  border: 1.7px solid var(--vermillion);
+  cursor: pointer;
+  filter: drop-shadow(0px 5px 15px var(--sunset));
+}
+
+:root .hover-title-shade-2:hover h3, .hover-title-shade-2:hover h1, .hover-title-shade-2:hover h2{
+  color: var(--pale-orange);
+}
+:root .btn {
+  height: 5vh;
+  width: 130%;
+  background-color: var(--bluish-white);
+  border: none;
+  font-size: var(--general-fonts);
+  font-weight: var(--medium);
+  text-transform: var(--uppers);
+  margin: 15% 0%;
+}
+
+:root .btn-size {
+  height: 6.5vh;
+  width: 15%;
+  text-transform: var(--uppers);
+  font-size: var(--general-fonts);
+}
+:root .btn-radius {
+  border-radius: 30px;
+  border: 1.7px solid var(--sunset);
+}
+
+:root .hover-title-shade:hover h3,
+.hover-title-shade:hover h1,
+.hover-title-shade:hover h2 {
+  color: var(--sunset);
+  transition: 0.3s;
+}
+
+:root .title-case {
+  text-transform: var(--uppers);
+}
+
+.margin-addintion {
+  margin: 5%;
+}
+
+:root .adjust {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+:root .title-shade {
+  color: var(--bluish-white);
+}
+
+:root input[type="text"] {
+  background: transparent;
+  border: 1.5px solid var(--bluish-white);
+  outline: none;
+  height: 5vh;
+  width: 90%;
+  border-radius: 20px;
+  padding-left: 5%;
+  color: var(--bluish-white);
+}
+
+:root input::placeholder {
+  color: var(--light-grey);
+  border-radius: 50px;
+}
+
+:root label {
+  color: var(--bluish-white);
+  padding: 5%;
+}
+
+:root textarea {
+  background: transparent;
+}
+
+:root textarea {
+  color: var(--bluish-white);
+  padding: 3%;
+  width: 93%;
+  border-radius: 20px;
+  border: 1.5px solid var(--bluish-white);
+}
+
+:root textarea::placeholder {
+  color: var(--light-grey);
+}
+:root input[type="text"]:hover {
+  box-shadow: (0px, 5px, 10px, var(--bluish-white));
+}
+
+:root button {
+  cursor: pointer;
+}
+
+/* -------------------------------------------------------global ends--------------------------------------------------- */
+
+/* ------------------------------------------------home page starts-------------------------------------------------- */
+
+.home-container {
+  height: 83.5vh;
+  width: 100%;
+}
+
+.home-innercontainer {
+  height: 100%;
+  width: 100%;
+  font-size: 3rem;
+  background: linear-gradient(rgba(247, 92, 25, 0.392), rgba(3, 3, 20, 0.858)),
+    url(Images/home-first.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.home-innercontainer button {
+  height: 5vh;
+  width: 20%;
+  background-color: transparent;
+  border: 2px solid aliceblue;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 50px;
+  color: aliceblue;
+  margin: 3% 0%;
+  transition: 0.5s linear;
+  font-size: 1.1rem;
+}
+
+.home-innercontainer button:hover {
+  background: aliceblue;
+  color: #e14d2a;
+  filter: drop-shadow(0px 0px 20px #f2910a);
+}
+
+.wave {
+  height: 7vh;
+  width: 300%;
+  position: absolute;
+  bottom: 0;
+  opacity: 0.2;
+  animation: animate-wave 8s linear infinite;
+}
+
+/* ------------------------------------------------home page ends-------------------------------------------------- */
+
+/* ------------------------------------------------top-intro------------------------------------------------------- */
+
+/* **************top-intro-img************************** */
+#top-intro {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+}
+
+.top-intro-img {
+  background: url(Images/home-second.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.width-40 {
+  width: 40%;
+}
+
+.height-50 {
+  height: 50vh;
+}
+
+.hover-drop-shadow:hover {
+  filter: drop-shadow(0px 5px 10px #383e56);
+  transition: 0.5s;
+}
+
+.hover-radius-3:hover {
+  border-radius: 3%;
+}
+/* **************top-intro-img done************************** */
+
+/* **************top-intro-text****************************** */
+
+.top-intro-text .width-40 {
+  width: 40%;
+}
+
+.top-intro-text .height-50 {
+  height: 50vh;
+}
+
+.top-intro-text hr {
+  margin: 3% 0%;
+}
+.para-case {
+  text-transform: var(--uppers);
+}
+
+.para-size {
+  font-size: var(--general-fonts);
+}
+
+.para-height {
+  line-height: 1.4;
+}
+
+.para-align {
+  text-align: justify;
+}
+
+.line-height-set {
+  line-height: 2;
+}
+
+.top-intro-text-flexing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexing {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* **************top-intro-text-done****************************** */
+
+/* ------------------------------------------------top-intro-ends------------------------------------------------------- */
+
+/* ------------------------------------------------mid-text------------------------------------------------------------ */
+#mid-text {
+  height: 30vh;
+  width: 100%;
+}
+
+/* *************************************mid-title*********************************** */
+.mid-title-size {
+  font-size: var(--medium-fonts);
+}
+
+.mid-text-case {
+  text-transform: var(--uppers);
+}
+
+.mid-text-flexing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.mid-text-shade {
+  color: var(--dark-grey);
+}
+
+/* *************************************mid-title-ends****************************** */
+
+/* ------------------------------------------------mid-text-ends------------------------------------------------------- */
+
+/* ----------------------------------------------cards-row-1------------------------------------------------------------ */
+
+#cards-row-1 {
+  height: 60vh;
+  width: 100%;
+  margin-top: 3%;
+}
+
+.card-height-100 {
+  height: 100%;
+}
+
+.card-width-100 {
+  width: 100%;
+}
+
+/* ****************************card-content************************** */
+
+.content-description {
+  position: absolute;
+  filter: drop-shadow(5px 5px 10px var(--light-grey));
+}
+
+.content-flexing {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.content-adjustment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.height-90 {
+  height: 90%;
+}
+
+.card-content-width-100 {
+  width: 100%;
+}
+
+.content {
+  height: 100%;
+  width: 30%;
+  position: relative;
+}
+
+.radius-10 {
+  border-radius: 10px;
+}
+
+.multiple-box-shadow {
+  filter: drop-shadow(0px 0px 20px var(--light-grey));
+}
+
+.height-52 {
+  height: 52vh;
+}
+
+.width-80 {
+  width: 80%;
+}
+
+.description-flexing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-hover:hover .content,
+.content-hover:hover .content-description,
+.content-hover:hover,
+.content-hover:hover .radius-10 .transformation {
+  color: var(--bluish-white) !important;
+  transition: 0.3s;
+  border-radius: 10px;
+  padding: 3%;
+  transform: translateY(-3);
+  transition: 0.5s;
+  filter: drop-shadow(0px 0px 10px var(--light-grey));
+  font-weight: 600;
+}
+
+.content-hover:hover .content-description {
+  background: radial-gradient(at 50% 50%, var(--light-grey), var(--dark-grey));
+  background-position: center;
+  background-size: cover;
+}
+
+/* ****************************card-content-ends************************** */
+
+/* ******************************first-child************************** */
+
+.content:nth-child(1) {
+  background: url(Images/row1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.content:nth-child(1):hover {
+  transition: 0.5s;
+}
+
+/* ******************************first-child-ends************************** */
+
+/* ******************************second-child************************** */
+
+.content:nth-child(2) {
+  background: url(Images/row2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.content:nth-child(2):hover {
+  transition: 0.5s;
+}
+
+.content-hover:hover .second-content-description-child {
+  background: radial-gradient(at 50% 50%, var(--light-grey), var(--dark-grey));
+  background-position: center;
+  background-size: cover;
+}
+
+/* ****************************second-child-ends************************** */
+
+/* ******************************third-child************************** */
+
+.content:nth-child(3) {
+  background: url(Images/row3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.content:nth-child(3):hover {
+  transition: 0.5s;
+}
+
+.content-hover:hover .third-content-description-child {
+  background: radial-gradient(at 50% 50%, var(--light-grey), var(--dark-grey));
+  background-position: center;
+  background-size: cover;
+}
+
+/* ******************************third-child-ends************************** */
+
+/* ----------------------------------------------cards-row-1-ends------------------------------------------------------- */
+
+/* ----------------------------------------------cards-row-2------------------------------------------------------------ */
+
+#cards-row-2 {
+  height: 60vh;
+  width: 100%;
+  margin: 5% 0%;
+}
+
+/* ******************************fourth-child************************** */
+
+.content-mid-row:nth-child(1) {
+  background: url(Images/row-second-1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.content-mid-row:nth-child(1):hover {
+  transition: 0.5s;
+}
+
+.content-mid-row-hover:hover .fourth-content-description-child {
+  background: radial-gradient(at 50% 50%, var(--light-grey), var(--dark-grey));
+  background-position: center;
+  background-size: cover;
+}
+
+/* ******************************fourth-child-ends************************** */
+
+/* ******************************fifth-child************************** */
+
+.content-mid-row:nth-child(2) {
+  background: url(Images/row-second-2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.content-mid-row:nth-child(2):hover {
+  transition: 0.5s;
+}
+
+.content-mid-row-hover:hover .fifth-content-description-child {
+  background: radial-gradient(at 50% 50%, var(--light-grey), var(--dark-grey));
+  background-position: center;
+  background-size: cover;
+}
+
+/* ******************************fifth-child-ends************************** */
+
+/* ******************************sixth-child************************** */
+
+.content-mid-row:nth-child(3) {
+  background: url(Images/row-second-3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.content-mid-row:nth-child(3):hover {
+  transition: 0.5s;
+}
+
+.content-mid-row-hover:hover .sixth-content-description-child {
+  background: radial-gradient(at 50% 50%, var(--light-grey), var(--dark-grey));
+  background-position: center;
+  background-size: cover;
+}
+
+/* ******************************sixth-child-ends************************** */
+
+/* ----------------------------------------------cards-row-2-ends------------------------------------------------------- */
+
+/* ----------------------------------------------cards-row-3------------------------------------------------------- */
+
+#cards-row-3 {
+  height: 60vh;
+  width: 100%;
+  margin: 5% 0%;
+}
+
+/* ******************************seventh-child************************** */
+
+.content-last-row:nth-child(1) {
+  background: url(Images/row-third-1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.content-last-row:nth-child(1):hover {
+  transition: 0.5s;
+}
+
+.content-last-row-hover:hover .seventh-content-description-child {
+  background: radial-gradient(at 50% 50%, var(--light-grey), var(--dark-grey));
+  background-position: center;
+  background-size: cover;
+}
+
+/* ******************************seventh-child-ends************************** */
+
+/* ******************************eighth-child************************** */
+
+.content-last-row:nth-child(2) {
+  background: url(Images/row-third-2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.content-last-row:nth-child(2):hover {
+  transition: 0.5s;
+}
+
+.content-last-row-hover:hover .eighth-content-description-child {
+  background: radial-gradient(at 50% 50%, var(--light-grey), var(--dark-grey));
+  background-position: center;
+  background-size: cover;
+}
+
+/* ******************************eighth-child-ends************************** */
+
+/* ----------------------------------------------cards-row-3-ends-----------------------------------*/
+
+/* ----------------------------------------------motiv------------------------------------------- */
+
+#motiv {
+  height: 70vh;
+  width: 100%;
+  filter: drop-shadow(0px 10px 20px var(--light-grey));
+}
+
+/* ***********************************************motiv-aside********************************** */
+
+.height-90 {
+  height: 90%;
+}
+
+/* ***********************************motiv-lside*********************************** */
+
+.motiv-lside {
+  background: url(Images/motiv.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* ***********************************motiv-lside-ends*********************************** */
+
+/* ***********************************motiv-rside*********************************** */
+
+.width-50 {
+  width: 50%;
+}
+
+.rside-back {
+  transition: 0.5s;
+  box-shadow: 0px 10px 20px var(--light-grey);
+}
+
+.height-30 {
+  height: 30vh;
+}
+
+.motiv-rside {
+  padding: 4% 0%;
+}
+/* ***********************************motiv-rside-ends*********************************** */
+
+/* ***********************************************motiv-aside-ends********************************** */
+
+/* --------------------------------------------motiv-ends-----------------------------------------*/
+
+/* ------------------------------------------tags--------------------------------------------*/
+
+#tags {
+  height: 60vh;
+  width: 100%;
+}
+
+.width-30 {
+  width: 30%;
+}
+/*------------------------------------------tags-done--------------------------------------------*/
+
+/*------------------------------------------bottom-title---------------------------------------*/
+
+#bottom-title {
+  height: 20vh;
+  width: 100%;
+}
+
+/*------------------------------------------bottom-title-done------------------------------------*/
+
+/* ----------------------------------------bottom-svg-bars------------------------------------- */
+
+#bottom-svg-bars {
+  height: 60vh;
+  width: 100%;
+}
+
+.back {
+  box-shadow: 0px 10px 20px var(--light-grey);
+}
+/* ----------------------------------------bottom-svg-bars-done-------------------------------- */
+
+/* ----------------------------------------bottom-image-bar---------------------------------------- */
+
+#bottom-image-bar {
+  height: 60vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 50, 0.682), rgba(0, 0, 50, 0.7)),
+    url(Images/bottom-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* ----------------------------------------bottom-image-bar-done----------------------------------- */
+
+/* ----------------------------------------another-svg-bar------------------------------------------ */
+
+#another-svg-bar {
+  height: 80vh;
+  width: 100%;
+}
+
+/* ----------------------------------------another-svg-bar-done------------------------------------------ */
+
+/* ----------------------------------------another-svg-bar-done------------------------------------------ */
+
+#conclusion-image {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 50, 0.682), rgba(0, 0, 50, 0.7)),
+    url(Images/conclusion\ image.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hover-glow-out:hover {
+  filter: drop-shadow(0px 0px 20px var(--bluish-white));
+  transition: 0.3s;
+}
+
+.transperent-back {
+  background: transparent;
+}
+
+.width-20 {
+  width: 20%;
+}
+
+.transperent-back-border {
+  border: 1.7px solid var(--bluish-white);
+}
+/* ----------------------------------------another-svg-bar-done------------------------------------------ */
+
+/* ----------------------------------------slide--------------------------------------------------------- */
+
+/* ----------------------------------------slide-done---------------------------------------------------- */
+
+/* ----------------------------------------dynamic-content---------------------------------------------------- */
+
+#bottom-dynamic-area {
+  height: 60vh;
+  width: 100%;
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 50, 0.741),
+      rgba(0, 0, 50, 0.5)
+    ),
+    url(Images/conclusion\ image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.border {
+  border: 2px solid var(--bluish-white);
+}
+
+.height-80 {
+  height: 80%;
+}
+
+/* ----------------------------------------dynamic-content-done----------------------------------------------- */
+
+/* ----------------------------------------customer-reviews--------------------------------------------------- */
+#customer-reviews {
+  height: 70vh;
+  width: 100%;
+}
+/* ----------------------------------------customer-reviews-done---------------------------------------------- */
+

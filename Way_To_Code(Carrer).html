@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WayToCode</title>
+  <link rel="stylesheet" href="Way_To_Code(Career).css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="Animations.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="header.css">
+  <script>
+    function reveal() {
+      const a = document.getElementById("dropbox").classList.toggle("show");
+    }
+    window.onclick = function (event) {
+      if (!event.target.matches(".dropbtn")) {
+        var dropdown = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdown.length; i++) {
+          var open = dropdown[i];
+          if (dropdown.classList.contains("show")) {
+            open.classList.remove("show");
+          }
+        }
+      }
+    };
+    //   reveal();
+
+    function revealSecond() {
+      const b = document.getElementById("dropbox2").classList.toggle("show2");
+    }
+    window.onclick = function (event2) {
+      if (!event2.target.matches(".dropbtn2")) {
+        var dropdown2 = document.getElementsByClassName("dropdown-content2");
+        var j;
+        for (j = 0; j < dropdown2.length; j++) {
+          var open2 = dropdown2[j];
+          if (dropdown2.classList.contains("show2")) {
+            open2.classList.remove("show2");
+          }
+        }
+      }
+    };
+    // revealSecond();
+
+    function revealThird() {
+      const c = document.getElementById("dropbox3").classList.toggle("show3");
+    }
+    window.onclick = function (event3) {
+      if (!event3.target.matches(".dropbtn3")) {
+        var dropdown3 = document.getElementsByClassName("dropdown-content3");
+        var k;
+        for (k = 0; k < dropdown3.length; k++) {
+          var open3 = dropdown3[k];
+          if (dropdown3.classList.contains("show3")) {
+            open3.classList.remove("show3");
+          }
+        }
+      }
+    };
+    //   revealThird();
+
+    function revealPythonFirst() {
+      const d = document
+        .getElementById("python-drop-btn")
+        .classList.toggle("python-show");
+    }
+
+    window.onclick = function (python_event) {
+      if (!python_event.target.matches(".python-drop-btn")) {
+        var python_dropdown = document.getElementsByClassName(
+          "python-dropdown-content"
+        );
+
+        var l;
+        for (l = 0; l < python_dropdown.length; l++) {
+          var python_open = python_dropdown[l];
+          if (python_dropdown.classList.contains("python-show")) {
+            python_open.classList.remove("python-show");
+          }
+        }
+      }
+    };
+
+    function revealPythonSecond() {
+      const e = document
+        .getElementById("python-drop-btn2")
+        .classList.toggle("python-show2");
+    }
+    window.onclick = function (python_event2) {
+      if (!python_event2.target.matches(".python-drop-btn2")) {
+        var python_dropdown2 = document.getElementsByClassName(
+          "python-dropdown-content2"
+        );
+        var m;
+        for (m = 0; m < python_dropdown2.length; m++) {
+          var python_open2 = python_dropdown2[m];
+          if (python_dropdown2.classList.contains("python-show2")) {
+            python_open2.classList.remove("python-show2");
+          }
+        }
+      }
+    };
+    //   revealPythonSecond();
+
+    function revealPythonThird() {
+      const f = document
+        .getElementById("python-drop-btn3")
+        .classList.toggle("python-show3");
+    }
+    window.onclick = function (python_event3) {
+      if (!python_event3.target.matches(".python-drop-btn3")) {
+        var python_dropdown3 = document.getElementsByClassName(
+          "python-dropdown-content3"
+        );
+        var n;
+        for (n = 0; n < python_dropdown3.length; n++) {
+          var python_open3 = python_dropdown3[n];
+          if (python_dropdown3.classList.contains("python-show3")) {
+            python_open3.classList.remove("python-show3");
+          }
+        }
+      }
+    };
+    //   revealPythonThird();
+
+    function revealjavafirst() {
+      const g = document.getElementById("java-drop-box").classList.toggle("java-show");
+    }
+
+    window.onclick = function (java_event) {
+      if (!java_event.target.matches(".java-drop-btn")) {
+        var java_dropdown = document.getElementsByClassName("java-dropdown-content");
+      }
+
+      var o;
+      for (o = 0; 0 < java_dropdown.length; o++) {
+        var java_open = java_dropdown[o];
+        if (java_dropdown.classList.contains("java-show")) {
+          java_open.classList.remove("java-show");
+        }
+      }
+    };
+
+    function revealjavasecond() {
+      const h = document.getElementById("java-drop-box2").classList.toggle("java-show2");
+    }
+
+    window.onclick = function (java_event2) {
+      if (!java_event2.target.matches(".java-drop-btn2")) {
+        var java_dropdown2 = document.getElementsByClassName("java-dropdown-content2");
+      }
+
+      var p;
+      for (p = 0; p < java_dropdown2.length; p++) {
+        var java_open2 = java_dropdown[p];
+        if (java_dropdown2.classList.contains("java-show2")) {
+          java_open2.classList.remove("java-show2");
+        }
+      }
+    };
+
+    function revealjavathird() {
+      const i = document.getElementById("java-drop-box3").classList.toggle("java-show3");
+    }
+
+    window.onclick = function (java_event3) {
+      if (!java_event3.target.matches(".java-drop-btn3")) {
+        var java_dropdown2 = document.getElementsByClassName("java-dropdown-content2");
+      }
+
+      var q;
+      for (q = 0; q < java_dropdown2.length; q++) {
+        var java_open3 = java_dropdown[q];
+        if (java_dropdown3.classList.contains("java-show3")) {
+          java_open3.classList.remove("java-show3");
+        }
+      }
+    };
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="header-inner-container">
+        <div class="header-info">
+          <i class="fa-regular fa-envelope"></i> &nbsp;&nbsp;
+          <a href="mailto:contact@example.com">info@waytocode.com</a>&nbsp;&nbsp; <i class="fa-solid fa-phone"></i>
+          &nbsp;&nbsp;
+          <a href="tel:+91 7976664814">+91 7976664814</a> &nbsp;&nbsp;
+          <i class="fa-brands fa-whatsapp"></i>&nbsp;&nbsp;
+          <a href="tel:+91 9461262751">+91 9461262751</a>
+        </div>
+        <div class="header-social-icons">
+          <a href="http://https://twitter.com/ToTechnologies?s=08"><i class="fa-brands fa-twitter"></i></a>
+          <a href="http://https://twitter.com/ToTechnologies?s=08"><i class="fa-brands fa-facebook"></i></a>
+          <a href="http://https://www.instagram.com/waytocodetechnologies/"><i class="fa-brands fa-instagram"></i></a>
+          <a
+            href="http://https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHTJnNhpJ9iPAAAAYeOhBLonWdI_FiWwnnJNeHN38SV7aSRxVLUs9FeIDbOgW1gJwErCqSROOzRVF7vRKqb6JsqNJnQu5PtdZrQ7kc5zDy45NeOjOh7OX-6Ijk0OhKndfzR9wY=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F14671403%2Fadmin%2F"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <div class="navbar-container">
+        <div class="navbar-inner-container">
+            <div class="logo">
+                <img src="Images/W2C_logo.png" alt="" />
+            </div>
+            <div class="nav-links">
+                <a href="Way_To_Code(Home).html">Home</a>
+
+                <div class="menu">
+                    <button type="button" class="wrapper">
+                        Company
+                        <div class="menu-content">
+                            <a href="./Way_To_ Code(Company).html">Team</a>
+                            <a href="./Way_To_Code(Gallery).html">Way To Code Gallery</a>
+                            <a href="./Way_To_Code(Carrer).html">Carrer</a>
+                            <a href="./Way_To_Code(About).html">About Us</a>
+                        </div>
+                    </button>
+                </div>
+                <div class="menu">
+                    <button type="button" class="wrapper">
+                        Services
+                        <div class="Service-content">
+                            <a href="./Way_To_Code(Services-webdevelopment).html">Web Development</a>
+                            <a href="./Way_To_Code(Services-Appdevelopment).html">App Development</a>
+                            <a href="./Way_To_Code(Services-designservicies).html">Design Services</a>
+                            <a href="./Way_To_Code(Services- customdevelopement).html">Custom Development</a>
+                            <a href="./Way_To_Code(Services- websitemaintainance).html">website Maintainence</a>
+                            <a href="./Way_To_Code(Services- GraphicsUIUX).html">Graphics & UI/UX</a>
+                        </div>
+                    </button>
+                </div>
+                <a href="./portfolio.html">Portfolio</a>
+                <a href="#training">Training</a>
+                <a href="./Way_To_Code(Technologies).html">Technology</a>
+                <a href="./Way_To_Code(Contact).html">Contact</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</nav>
+  <section id="Company" class="company">
+    <div class="container">
+      <div class="inner-container">
+        <div class="team-container">
+          <div class="team-top-image bounce-in-top sec1">
+            <img src="Images/wave-img.png" alt="" class="about-animation-wave">
+
+            <h1 class="top-image-text">Build Up Your Success</h1>
+            <div class="black-box  bounce-in-top sec1e2">
+              <a href="#"><button type="button">Home</button></a>
+              <a href="#"><button type="button">Read more</button></a>
+            </div>
+          </div>
+          <div class="team-intro-title">
+            <h1>Drag To Your Success</h1>
+            <hr size="2px" width="17%" color="#383e56" />
+            <h4>
+              "All our dreams can come true; if we have the courage to
+                pursue them."
+            </h4>
+          </div>
+          <div class="career-container">
+            <div class="career-inner-container">
+              <div class="career-aside">
+                <div class="career-lside">
+                  <div class="lside-top">
+                    <h3>Wanna join us?</h3>
+                    <hr size="3px" width="20%" color="#e14d2a" />
+                    <p>
+                      Just share Your curriculum vitae, work experience
+                      details, aprooved internship details and all those
+                      things that could make your way more broader to shine
+                      through your career by joining us.
+                    </p>
+                  </div>
+                  <div class="lside-bottom">
+                    <h3>What We Are Known For?</h3>
+                    <hr size="3px" width="20%" color="#e14d2a" />
+                    <p>
+                      <center><strong> Our Motive ? Simple.</strong></center>
+                      <br />
+                      - We build technology to improve the safety,
+                      productivity and profitability of businesses that power
+                      the physical economy. <br /><br />
+
+                      - At Motive, we are committed to building a company that
+                      creates products customers love and fostering a culture
+                      that enables people to do their best work. <br /><br />
+
+                      - We are looking for people from all backgrounds who
+                      want to make an impact on the millions of businesses
+                      that power the physical economy.
+                    </p>
+                  </div>
+                </div>
+                <div class="career-rside">
+                  <div class="career-rside-top">
+                    <h3>Android Development</h3>
+                    <hr size="3px" width="20%" color="#e14d2a" />
+                    <p>
+                      "Any fool can write code that a computer can understand.
+                      Good programmers write code that humans can understand."
+                    </p>
+                  </div>
+                  <div class="career-rside-core">
+                    <button type="button" class="dropbtn" onclick="reveal()">
+                      Job Requirements
+                    </button>
+                    <br /><br />
+                    <hr width="100%" color="grey" size="1.5px" />
+                    <div class="dropdown-content" id="dropbox">
+                      <a href="">
+                        &nbsp;&nbsp;
+                        <big><b>&#x269B;</b></big> B.E/B.Tech/BCA/MCA From Any
+                        Reputed University.
+                      </a>
+                      <br />
+                      <a href="">
+                        &nbsp;&nbsp; <big> <b>&#x269B;</b></big> Years Of
+                        Experience In Software Company Is An Advantage.</a>
+                      <br />
+                      <a href="">
+                        &nbsp;&nbsp; <big> <b>&#x269B;</b></big> And Execute
+                        Lead Generation Activities.</a>
+                      <br />
+                      <a href="">
+                        &nbsp;&nbsp; <big> <b>&#x269B;</b></big> Help Building
+                        Coding Skills, Problem Solving Skills.</a>
+                      <br />
+                    </div>
+                    <button type="button" class="dropbtn2" onclick="revealSecond()">
+                      Job Responsibilities
+                    </button>
+                    <br /><br />
+                    <hr width="100%" color="grey" size="1.5px" />
+                    <div class="dropdown-content2" id="dropbox2">
+                      <a href="">
+                        &nbsp;&nbsp; <big><b>&#x269B;</b></big> Global Apps
+                        Development.
+                      </a>
+                      <br />
+                      <a href="">
+                        &nbsp;&nbsp; <big><b>&#x269B;</b></big> Design and
+                        Develop Application.</a>
+                      <br />
+                      <a href="">
+                        &nbsp;&nbsp;&nbsp;<big><b>&#x269B;</b></big>
+                        Experience Of Android SDK.</a>
+                      <br />
+                      <a href="">
+                        &nbsp;&nbsp;&nbsp;<big><b>&#x269B;</b></big> Work With
+                        Outside Data Sources And APIs.</a>
+                      <br />
+                      <a href="">&nbsp;&nbsp;&nbsp;<big><b>&#x269B;</b></big>
+                        Experience With Third-Party Libraries And APIs.</a>
+                    </div>
+                    <button type="button" class="dropbtn3" onclick="revealThird()">
+                      Benefits
+                    </button>
+                    <br /><br />
+                    <hr width="100%" color="grey" size="1.5px" />
+                    <div class="dropdown-content3" id="dropbox3">
+                      <a href="">
+                        &nbsp;&nbsp;<big><b>&#x269B;</b></big> Very
+                        Competitive Salary And Long Term Benefits With
+                        Excellent Career Opportunity.
+                      </a>
+                      <br />
+                      <a href="">
+                        &nbsp;&nbsp;<big><b>&#x269B;</b></big> Training On New
+                        Technology.</a>
+                      <br />
+                      <a href="">&nbsp;&nbsp;<big><b>&#x269B;</b></big> Most
+                        Importantly A Friendly Work Environment With
+                        Opportunity To Learn From A Number Of <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Highly Skilled
+                        Mentors.</a>
+                      <br />
+                    </div>
+                    <a href=""><button type="button" class="applybtn">
+                        Apply Now
+                      </button></a>
+                    <div class="python-developement">
+                      <div class="python-top">
+                        <h3>Python development</h3>
+                        <hr size="3px" width="17%" color="#e14d2a" />
+                        <p>"Life is short - (You need Python)"</p>
+                      </div>
+                      <div class="python-core">
+                        <button type="button" class="python-drop-btn" onclick="revealPythonFirst()">
+                          Job Requirements
+                        </button>
+                        <br /><br />
+                        <hr width="100%" color="grey" size="1.5px" />
+                        <div class="python-dropdown-content" id="python-drop-btn">
+                          <a href="">
+                            &nbsp;&nbsp;<big><b>&#x269B;</b></big>
+                            B.E/B.Tech/BCA/MCA From Any Reputed University
+                          </a>
+                          <br />
+                          <a href="">
+                            &nbsp;&nbsp;<big><b>&#x269B;</b></big> 2 Years Of
+                            Experience In Software Company Is An Advantage.</a>
+                          <br />
+                          <a href="">&nbsp;&nbsp;<big><b>&#x269B;</b></big> Manage And
+                            Execute Lead Generation Activities.<br /></a>
+                          <br />
+                          <a href="">&nbsp;&nbsp;<big><b>&#x269B;</b></big> Help
+                            Building Coding Skills, Problem Solving Skills.<br /></a>
+                          <br />
+                        </div>
+
+                        <button type="button" class="python-drop-btn2" onclick="revealPythonSecond()">
+                          Job Responsibilities
+                        </button>
+                        <br /><br />
+                        <hr width="100%" color="grey" size="1.5px" />
+                        <div class="python-dropdown-content2" id="python-drop-btn2">
+                          <a href="">
+                            &nbsp;&nbsp;<big><b>&#x269B;</b></big>
+                            Global Apps Development
+                          </a>
+                          <br />
+                          <a href="">
+                            &nbsp;&nbsp;<big><b>&#x269B;</b></big>Design And Develop Applications.</a>
+                          <br />
+                          <a href="">&nbsp;&nbsp;<big><b>&#x269B;</b></big> Experience
+                            Of Android SDK.<br /></a>
+                          <br />
+                          <a href="">&nbsp;&nbsp;<big><b>&#x269B;</b></big> Work With
+                            Outside Data Sources And APIs .<br /></a>
+                          <br />
+                          <a href="">&nbsp;&nbsp;<big><b>&#x269B;</b></big> Experience
+                            With Third-Party Libraries And APIs <br /></a>
+                          <br />
+                        </div>
+
+                        <button type="button" class="python-drop-btn3" onclick="revealPythonThird()">
+                          Benefits
+                        </button>
+                        <br /><br />
+                        <hr width="100%" color="grey" size="1.5px" />
+                        <div class="python-dropdown-content3" id="python-drop-btn3">
+                          <a href="">
+                            &nbsp;&nbsp;<big><b>&#x269B;</b></big>
+                            Very Competitive Salary And Long Term Benefits
+                            With Excellent Career Opportunity
+                          </a>
+                          <br />
+                          <a href="">
+                            &nbsp;&nbsp;<big><b>&#x269B;</b></big> Training On
+                            New Technology.
+                          </a>
+                          <br />
+                          <a href="">&nbsp;&nbsp;<big><b>&#x269B;</b></big> Most
+                            Importantly A Friendly Work Environment With
+                            Opportunity To Learn From A Number Of <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Highly
+                            Skilled Mentors. <br /></a>
+                          <br />
+                        </div>
+                        <a href=""><button type="button" class="applybtn">
+                            Apply Now
+                          </button></a>
+                      </div>
+                    </div>
+                    <div class="java-development">
+                      <div class="java-top">
+                        <h3>Java Development</h3>
+                        <hr size="3px" width="17%" color="#e14d2a" />
+                        <p>
+                          Before software can be reusable it first has to be
+                          usable
+                        </p>
+                      </div>
+                      <div class="java-core">
+                        <button type="button" class="java-drop-btn" onclick="revealjavafirst()">
+                          Job Requirements
+                        </button>
+                        <br /><br />
+                        <hr width="100%" color="grey" size="1.5px" />
+                        <div class="java-dropdown-content" id="java-drop-box">
+                          <a href="">
+                            &nbsp;&nbsp;<big><b>&#x269B;</b></big>
+                            B.E/B.Tech/BCA/MCA From Any Reputed University
+                          </a>
+                          <br />
+                          <a href="">
+                            &nbsp;&nbsp;<big><b>&#x269B;</b></big> 2 Years Of
+                            Experience In Software Company Is An Advantage.</a>
+                          <br />
+                          <a href="">&nbsp;&nbsp;<big><b>&#x269B;</b></big> Manage And
+                            Execute Lead Generation Activities.<br /></a>
+                          <br />
+                          <a href="">&nbsp;&nbsp;<big><b>&#x269B;</b></big> Help
+                            Building Coding Skills, Problem Solving Skills.<br /></a>
+                          <br />
+                        </div>
+                        <button type="button" class="java-drop-btn2" onclick="revealjavasecond()">
+                          Job Responsibilities
+                        </button>
+                        <br /><br />
+                        <hr width="100%" color="grey" size="1.5px" />
+                        <div class="java-dropdown-content2" id="java-drop-box2">
+                          <a href="">
+                            &nbsp;&nbsp;<big><b>&#x269B;</b></big>
+                            Global Apps Development
+                          </a>
+                          <br />
+                          <a href="">
+                            &nbsp;&nbsp;<big><b>&#x269B;</b></big>Design And Develop Applications.</a>
+                          <br />
+                          <a href="">&nbsp;&nbsp;<big><b>&#x269B;</b></big> Experience
+                            Of Android SDK.<br /></a>
+                          <br />
+                          <a href="">&nbsp;&nbsp;<big><b>&#x269B;</b></big> Work With
+                            Outside Data Sources And APIs .<br /></a>
+                          <br />
+                          <a href="">&nbsp;&nbsp;<big><b>&#x269B;</b></big> Experience
+                            With Third-Party Libraries And APIs <br /></a>
+                          <br />
+                        </div>
+                        <button type="button" class="java-drop-btn3" onclick="revealjavathird()">
+                          Benefits
+                        </button>
+                        <br /><br />
+                        <hr width="100%" color="grey" size="1.5px" />
+                        <div class="java-dropdown-content3" id="java-drop-box3">
+                          <a href="">
+                            &nbsp;&nbsp;<big><b>&#x269B;</b></big>
+                            Very Competitive Salary And Long Term Benefits
+                            With Excellent Career Opportunity
+                          </a>
+                          <br />
+                          <a href="">
+                            &nbsp;&nbsp;<big><b>&#x269B;</b></big> Training On
+                            New Technology.
+                          </a>
+                          <br />
+                          <a href="">&nbsp;&nbsp;<big><b>&#x269B;</b></big> Most
+                            Importantly A Friendly Work Environment With
+                            Opportunity To Learn From A Number Of <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Highly
+                            Skilled Mentors. <br /></a>
+                          <br />
+                        </div>
+                        <a href=""><button type="button" class="applybtn">
+                            Apply Now
+                          </button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <footer>
+    <div class="box1">
+
+        <img src="Images/W2C_logo.png">
+        <h1><span>&#9755;</span> Digitel Solution that transform Business</h1>
+
+        <div class="lside1">
+            <h3><big><b>&#8919;</b></big>Advance Your Career <big><b>&#8918;</b></big></h3>
+            <p>No matter where you are in your career journey, ISACA has the resources, training and credentials
+                to
+                boost your career success.</p>
+        </div>
+
+        <div class="lside2">
+            <h3><big><b>&#8919;</b></big> Connect and Network <big><b>&#8918;</b></big></h3>
+            <p>With 165,000+ members representing a range of disciplines in 188+ countries worldwide, you will be in
+                great company. Get involved and network virtually and in person in one of our 220+ chapters.</p>
+        </div>
+
+        <div class="lside3">
+            <h3><big><b>&#8919;</b></big> Grow Your Leadership Skills <big><b>&#8918;</b></big></h3>
+            <p>Our vibrant online Engage community gives you access to industry experts, focused discussions and
+                volunteering opportunities. Hone your leadership skills, network and give back to your community.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="box2">
+
+        <h1><span>&#9755;</span> HEAD OFFICE ADDRESS</h1>
+
+        <div class="head-office">
+            <div class="icons">
+                <i class="fa-sharp fa-solid fa-envelope icon"></i>
+                <i class="fa-sharp fa-solid fa-building icon"></i>
+                <i class="fa-sharp fa-solid fa-address-book icon"></i>
+                <i class="fa-brands fa-whatsapp icon"></i>
+            </div>
+
+            <div class="social">
+                <div class="social-first">
+                    <h4>EMAIL</h4>
+                    <p>info@waytocode.in</p>
+                </div>
+
+                <div class="social-second">
+                    <h4>OFFICE</h4>
+                    <P>218, 4th floor, moonlight complex, drive in rd, above metro pillar no.114,gurukul,ahmedabad,
+                        gujarat - 380054</P>
+                </div>
+
+                <div class="social-third">
+                    <h4>CONTACT</h4>
+                    <P>+91 7976664814</P>
+                </div>
+
+                <div class="social-fourth">
+                    <h4>WHAT'S APP</h4>
+                    <P>+91 9461262751</P>
+                </div>
+            </div>
+        </div>
+
+        <h2><span>&#9755;</span> BRANCH OFFICE ADDRESS</h2>
+
+        <div class="branch-office">
+            <div class="icons">
+                <i class="fa-sharp fa-solid fa-envelope icon"></i>
+                <i class="fa-sharp fa-solid fa-building icon"></i>
+                <i class="fa-sharp fa-solid fa-address-book icon"></i>
+            </div>
+
+            <div class="social">
+                <div class="social-first">
+                    <h4>EMAIL</h4>
+                    <p>info.hmt@waytocode.in</p>
+                </div>
+
+                <div class="social-second">
+                    <h4>OFFICE</h4>
+                    <P>1st floor,siddhi vinayak complex,near cinemagic, station road himatnagar sabarkantha,gujrat -
+                        383001</P>
+                </div>
+
+                <div class="social-third">
+                    <h4>CONTACT</h4>
+                    <P>+91 9429332052</P>
+                </div>
+            </div>
+        </div>
+
+        <div class="end">
+            <h5><b>&#10022;</b> Copyright 2023. All Rights Reserved</h5>
+            <p>by <a href="#">WayToCode</a></p>
+        </div>
+
+    </div>
+
+
+    <div class="box3">
+
+        <h1><span>&#9755;</span> Useful Links</h1>
+
+        <div class="link">
+            <a href="#"><span><big><b>&#8919;</b></big></span> Home</a>
+            <a href="#"><span><big><b>&#8919;</b></big></span> About us</a>
+            <a href="#"><span><big><b>&#8919;</b></big></span> Services</a>
+            <a href="#"><span><big><b>&#8919;</b></big></span> Portfolio</a>
+        </div>
+
+        <img src="Images/certified.png" class="img1">
+
+        <img src="Images/play_store.png" class="img2">
+
+    </div>
+        
+  </footer>
+</body>
+
+</html>
